@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Saira:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Lilita One", sans-serif;
+}
+
+.header {
+    background-image: url("../images/Group\ 7.svg");
+    height: 789px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_team {
+    padding: 0 100px 0 0;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-menu li {
+    padding: 20px 50px 0 0;
+    list-style: none;
+}
+
+.nav-menu li a {
+    font-family: "Lilita One", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.btn-nav a {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border: 2px white solid;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger i {
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 15px 0;
+}
+
+@media (max-width: 837px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .btn-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 477px) {
+    nav {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 406px) {
+    nav {
+        padding: 20px 20px;
+    }
+}
+
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 160px;
+}
+
+.contact h1 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.contact h4 {
+    padding: 30px 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: rgba(246, 126, 126, 1);
+}
+
+.add {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.add img {
+    padding: 20px 0;
+}
+
+.add p {
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: white;
+}
+
+.inform input {
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid rgba(121, 200, 199, 1);
+    outline: none;
+    margin: 30px 30px;
+    background-color: transparent;
+    width: 540px;
+    height: 42px;
+    color: rgba(121, 200, 199, 1);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.inform input::placeholder {
+    color: rgba(121, 200, 199, 1);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.btn-input {
+    padding-left: 35px;
+}
+
+.btn-input button {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgba(0, 64, 71, 1);
+    padding: 10px 30px;
+    background-color: white;
+    outline: none;
+    border: solid 2px rgba(0, 64, 71, 1);
+    border-radius: 30px;
+}
+
+@media (max-width:1246px) {
+    .inform input{
+        width: 350px;
+    }
+}
+
+@media (max-width:1160px) {
+    .main-section { 
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 160px;
+    }
+    .header{
+        height: 1300px;
+    }
+}
+
+@media (max-width:633px) {
+    .main-section {
+        padding: 100px 100px;
+    }
+}
