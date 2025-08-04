@@ -520,3 +520,131 @@ nav {
     }
      
 }
+
+
+footer{
+    background-color: rgba(0, 37, 41, 1);
+    width: 100%;
+    height: 200px;
+}
+
+.under{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 48px 160px;
+}
+
+.left-section{
+    display: flex;
+}
+
+.adress{
+    padding-left: 100px;
+}
+
+.adress ul li{
+    list-style: none;
+    font-weight:lighter;
+}
+
+.adress ul li a{ 
+    font-weight: 100;
+    font-size: 15px; 
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: gray;
+    text-decoration: none;
+}
+
+.f-icon h2{
+    font-size: 40px;
+    color: white;
+}
+
+.f-icon ul{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-icon ul li{
+    list-style: none;
+}
+
+.f-icon ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.social{
+    display: flex; 
+}
+
+.social li{
+    text-align: right;
+    list-style: none;
+}
+
+.social li a{
+    text-decoration: none;
+}
+
+.social li a i{  
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.right-section p{
+    font-weight: 100;
+    font-size: 15px; 
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: gray;
+    text-decoration: none;
+}
+
+@media (max-width: 986px) {
+    .under{
+        display: block;
+    }
+    .left-section{
+        display: block;
+    }
+
+    .adress{
+        padding-left: 0;
+    }
+    .f-icon ul{
+        justify-content: left; 
+    }
+    .f-icon ul .two{
+        padding-left: 40px;
+    }
+    footer{
+        background-color: rgba(0, 37, 41, 1);
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 551px){
+    .under{ 
+        padding: 48px 100px;
+    }
+}
+
+@media (max-width: 431px){
+    .under{ 
+        padding: 48px 50px;
+    }
+}
+
+@media (max-width: 332px){
+    footer{
+        background-color: rgba(0, 37, 41, 1);
+        width: 100%;
+        height: 380px;
+    }
+}
